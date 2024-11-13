@@ -1,10 +1,2 @@
 { "version": 2,
-  "builds": [
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "env": {
-    "BLOB_READ_WRITE_TOKEN": "vercel_blob_rw_GCO8mGIPbGMOsOnh_Q78DgVjOzik3x7jR9SmA1Ft7Wfksne"
-  } }
+"rewrites": [{ "source": "/(.*)", "destination": "/api" }]}
